@@ -94,8 +94,17 @@ public:
 	}
 	virtual Matrix operator-(Matrix& b)
 	{
-		return *this + b*(-1);
-	}
+	
+		if ((m != b.m) || (n != b.n))
+		{
+			Matrix a = Matrix();
+			return a;
+		}
+		Matrix a(m, n);
+		for (int i = 0; i < n*m; i++)
+			a.data[i] = data[i]  - b.data[i];
+		return a;
+		}
 	virtual Matrix reverse()
 	{
 		if ((m != n) || (determinant() == 0))
