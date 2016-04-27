@@ -213,7 +213,7 @@ public:
 	}
 	virtual bool failed()
 	{
-		return data == NULL;
+		return (data == NULL)||(n == 0)||(m == 0);
 	}
 };
 
