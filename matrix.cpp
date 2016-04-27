@@ -37,8 +37,6 @@ public:
 				for (int k = 0; k < m; k++)
 					a.set(k,j,a.get(k,j)+a.get(k,i)*c);	
 			}
-			a.print(cout);
-		cout << endl;
 		}
 		return a;
 	}
@@ -96,15 +94,7 @@ public:
 	}
 	virtual Matrix operator-(Matrix& b)
 	{
-			if ((m != b.m) || (n != b.n))
-		{
-			Matrix a = Matrix();
-			return a;
-		}
-		Matrix a(m, n);
-		for (int i = 0; i < n*m; i++)
-			a.data[i] = data[i] - b.data[i];
-		return a;
+		return *this + b*(-1);
 	}
 	virtual Matrix reverse()
 	{
@@ -119,11 +109,7 @@ public:
 				a.set(i, j, get(i, j));
 		for (int i = 0; i < n; i++)
 			a.set(i + n, i, 1);
-		a.print(cout);
-		cout << endl;
 		a = a.gauss();
-		a.print(cout);
-		cout << endl;
 		for (int i = n - 1; i > 0; i--)
 			for (int j = 0; j < i; j++)
 			{
@@ -131,13 +117,9 @@ public:
 				for (int k = i; k < n*2; k++)
 					a.set(k, j, a.get(k, j)+a.get(k, i)*c);
 			}
-		a.print(cout);
-		cout << endl;
 		for (int i = 0; i < n; i++)
 			for (int k = 2*n; k >= i; k--)
 				a.set(k, i, a.get(k,i)/a.get(i,i));
-		a.print(cout);
-		cout << endl;
 		for (int i = 0; i < n; i++)
 			for (int j = 0; j < n; j++)
 				b.set(i,j,a.get(i+n, j));
@@ -216,6 +198,8 @@ public:
 		return (data == NULL)||(n == 0)||(m == 0);
 	}
 };
+
+
 
 Matrix* get_init(int m, int n)
 {
