@@ -1,11 +1,226 @@
-/var/tmp//ccuELwLI.o: In function `MatrixTest_GetNM_Test::TestBody()':
-cur.cpp:(.text+0x17): undefined reference to `get_init(int, int)'
-/var/tmp//ccuELwLI.o: In function `MatrixTest_Reverse_Test::TestBody()':
-cur.cpp:(.text+0x24d): undefined reference to `get_init(int, int)'
-cur.cpp:(.text+0x459): undefined reference to `get_init(int, int)'
-/var/tmp//ccuELwLI.o: In function `MatrixTest_Transpose_Test::TestBody()':
-cur.cpp:(.text+0xab0): undefined reference to `get_init(int, int)'
-/var/tmp//ccuELwLI.o: In function `MatrixTest_SetGet_Test::TestBody()':
-cur.cpp:(.text+0xcd0): undefined reference to `get_init(int, int)'
-/var/tmp//ccuELwLI.o:cur.cpp:(.text+0xed1): more undefined references to `get_init(int, int)' follow
-./check.sh: line 24: ./a.out: No such file or directory
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from MatrixTest
+[ RUN      ] MatrixTest.GetNM
+[       OK ] MatrixTest.GetNM
+[ RUN      ] MatrixTest.Reverse
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	0	0	0	0	1	0	0	0	0	
+0	1	0	0	0	0	1	0	0	0	
+0	0	1	0	0	0	0	1	0	0	
+0	0	0	1	0	0	0	0	1	0	
+0	0	0	0	1	0	0	0	0	1	
+
+1	2	3	4	
+0	1	2	3	
+0	0	1	2	
+0	0	0	1	
+1	2	3	4	
+0	1	2	3	
+0	0	1	2	
+0	0	0	1	
+
+1	2	3	4	
+0	1	2	3	
+0	0	1	2	
+0	0	0	1	
+
+1	2	3	4	
+0	1	2	3	
+0	0	1	2	
+0	0	0	1	
+
+1	2	3	4	
+0	1	2	3	
+0	0	1	2	
+0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	2	3	4	1	0	0	0	
+0	1	2	3	0	1	0	0	
+0	0	1	2	0	0	1	0	
+0	0	0	1	0	0	0	1	
+
+1	0	0	0	1	-2	1	0	
+0	1	0	0	0	1	-2	1	
+0	0	1	0	0	0	1	-2	
+0	0	0	1	0	0	0	1	
+
+1	0	0	0	1	-2	1	0	
+0	1	0	0	0	1	-2	1	
+0	0	1	0	0	0	1	-2	
+0	0	0	1	0	0	0	1	
+
+1	-2	1	0	
+0	1	-2	1	
+0	0	1	-2	
+0	0	0	1	
+index: 0
+index: 1
+index: 2
+index: 3
+[       OK ] MatrixTest.Reverse
+[ RUN      ] MatrixTest.Transpose
+[       OK ] MatrixTest.Transpose
+[ RUN      ] MatrixTest.SetGet
+[       OK ] MatrixTest.SetGet
+[ RUN      ] MatrixTest.FailedM
+cur.cpp:99: Failure
+Value of: m->failed()
+  Actual: false
+Expected: true
+[  FAILED  ] MatrixTest.FailedM
+[ RUN      ] MatrixTest.Read
+[       OK ] MatrixTest.Read
+[ RUN      ] MatrixTest.Determinant
+1	2	3	
+0	-3	-6	
+0	-6	-12	
+
+1	2	3	
+0	-3	-6	
+0	0	0	
+
+1	2	3	
+0	-3	-6	
+0	0	0	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+1	0	0	0	0	
+0	1	0	0	0	
+0	0	1	0	0	
+0	0	0	1	0	
+0	0	0	0	1	
+
+[       OK ] MatrixTest.Determinant
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran.
+[  PASSED  ] 6 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] MatrixTest.FailedM
+
+ 1 FAILED TEST
