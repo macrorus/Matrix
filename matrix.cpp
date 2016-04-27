@@ -216,3 +216,9 @@ public:
 		return data == NULL;
 	}
 };
+
+Matrix* get_init(int m, int n)
+{
+	Matrix* a = new Matrix(m,n);
+	return a;
+}
