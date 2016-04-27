@@ -1,9 +1,9 @@
 In file included from cur.cpp:16:0:
 horoshilov/matrix.cpp: In member function 'virtual Matrix Matrix::operator-(Matrix&)':
-horoshilov/matrix.cpp:99:16: error: no match for 'operator+' (operand types are 'Matrix' and 'Matrix')
-   return *this + b*(-1);
+horoshilov/matrix.cpp:100:16: error: no match for 'operator+' (operand types are 'Matrix' and 'Matrix')
+   return *this + b*x;
                 ^
-horoshilov/matrix.cpp:99:16: note: candidates are:
+horoshilov/matrix.cpp:100:16: note: candidates are:
 horoshilov/matrix.cpp:60:17: note: virtual Matrix Matrix::operator+(Matrix&)
   virtual Matrix operator+(Matrix& b)
                  ^
@@ -21,9 +21,9 @@ In file included from /usr/include/g++/bits/stl_algobase.h:67:0,
      ^
 /usr/include/g++/bits/stl_iterator.h:333:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::reverse_iterator<_Iterator>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::reverse_iterator<_Iterator>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/bits/stl_algobase.h:67:0,
                  from /usr/include/g++/bits/char_traits.h:39,
                  from /usr/include/g++/string:40,
@@ -37,9 +37,9 @@ In file included from /usr/include/g++/bits/stl_algobase.h:67:0,
      ^
 /usr/include/g++/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::move_iterator<_Iterator>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::move_iterator<_Iterator>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -51,9 +51,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2365:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:53:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -65,9 +65,9 @@ In file included from /usr/include/g++/string:53:0,
      ^
 /usr/include/g++/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   mismatched types 'const _CharT*' and 'Matrix'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   mismatched types 'const _CharT*' and 'Matrix'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:53:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -79,9 +79,9 @@ In file included from /usr/include/g++/string:53:0,
      ^
 /usr/include/g++/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -93,9 +93,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2402:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -107,9 +107,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2418:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -121,9 +121,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2430:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -135,9 +135,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2436:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -149,9 +149,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2442:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -163,9 +163,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2454:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   mismatched types 'const _CharT*' and 'Matrix'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   mismatched types 'const _CharT*' and 'Matrix'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -177,9 +177,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2460:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -191,9 +191,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2466:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/string:52:0,
                  from /usr/include/g++/stdexcept:39,
                  from /usr/include/g++/array:38,
@@ -205,9 +205,9 @@ In file included from /usr/include/g++/string:52:0,
      ^
 /usr/include/g++/bits/basic_string.h:2472:5: note:   template argument deduction/substitution failed:
 In file included from cur.cpp:16:0:
-horoshilov/matrix.cpp:99:23: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
-   return *this + b*(-1);
-                       ^
+horoshilov/matrix.cpp:100:20: note:   'Matrix' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   return *this + b*x;
+                    ^
 In file included from /usr/include/g++/vector:65:0,
                  from /usr/pkg/include/gtest/gtest.h:55,
                  from cur.cpp:14:
