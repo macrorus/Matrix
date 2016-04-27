@@ -1,11 +1,11 @@
-/var/tmp//cc9JmMDY.o: In function `MatrixTest_GetNM_Test::TestBody()':
+/var/tmp//ccuELwLI.o: In function `MatrixTest_GetNM_Test::TestBody()':
 cur.cpp:(.text+0x17): undefined reference to `get_init(int, int)'
-/var/tmp//cc9JmMDY.o: In function `MatrixTest_Reverse_Test::TestBody()':
+/var/tmp//ccuELwLI.o: In function `MatrixTest_Reverse_Test::TestBody()':
 cur.cpp:(.text+0x24d): undefined reference to `get_init(int, int)'
 cur.cpp:(.text+0x459): undefined reference to `get_init(int, int)'
-/var/tmp//cc9JmMDY.o: In function `MatrixTest_Transpose_Test::TestBody()':
+/var/tmp//ccuELwLI.o: In function `MatrixTest_Transpose_Test::TestBody()':
 cur.cpp:(.text+0xab0): undefined reference to `get_init(int, int)'
-/var/tmp//cc9JmMDY.o: In function `MatrixTest_SetGet_Test::TestBody()':
+/var/tmp//ccuELwLI.o: In function `MatrixTest_SetGet_Test::TestBody()':
 cur.cpp:(.text+0xcd0): undefined reference to `get_init(int, int)'
-/var/tmp//cc9JmMDY.o:cur.cpp:(.text+0xed1): more undefined references to `get_init(int, int)' follow
+/var/tmp//ccuELwLI.o:cur.cpp:(.text+0xed1): more undefined references to `get_init(int, int)' follow
 ./check.sh: line 24: ./a.out: No such file or directory
