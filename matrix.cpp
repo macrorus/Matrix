@@ -96,7 +96,8 @@ public:
 	}
 	virtual Matrix operator-(Matrix& b)
 	{
-		return *this + b*(-1);
+		float x = -1;
+		return *this + b*x;
 	}
 	virtual Matrix reverse()
 	{
